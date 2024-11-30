@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".ui.about.AboutFragment">
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="Profile Image"
+        android:src="@mipmap/ic_channel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="sans-serif-black"
+        android:text="About Me"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="© 2024 Mazidah Binti Muhsin. All Rights Reserved."
+        android:textColor="#808080"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGitHub" />
+
+    <TextView
+        android:id="@+id/textViewGitHub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:text="GitHub Page"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/developerInfoBox" />
+
+    <LinearLayout
+        android:id="@+id/descriptionBox"
+        android:layout_width="349dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="40dp"
+        android:background="#9E9994"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProfile">
+
+        <TextView
+            android:id="@+id/etDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Description :"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/etdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Save time with Energy Bill Calculator. Let us do calculation for you!"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/developerInfoBox"
+        android:layout_width="349dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="28dp"
+        android:background="#9E9994"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionBox">
+
+        <TextView
+            android:id="@+id/textViewDeveloper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Develop By :"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name : Mazidah Binti Muhsin"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewStudentNumber3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Number: 2022663662"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewProgrammeCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Programme Code: CS240"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Group : RCDCS2405A"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
